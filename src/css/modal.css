@@ -1,0 +1,96 @@
+/* Overlay styles to center the modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Modal content styles */
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; /* Increase width */
+    max-width: 900px; /* Maximum width to prevent it from becoming too wide */
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: black;
+    max-height: 80vh; /* Maximum height of modal */
+    overflow-y: auto; /* Allow scrolling if content exceeds the height */
+  }
+  
+  /* Modal title */
+  .modal-content h2 {
+    margin-top: 0;
+    color: black;
+  }
+  
+  /* Close button styles */
+  .close-modal-button {
+    margin-top: 20px;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .close-modal-button:hover {
+    background: #0056b3;
+  }
+  
+  .language-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .language-buttons button {
+    padding: 8px 16px;
+    color : blue;
+    cursor: pointer;
+    background-color: #fff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .language-buttons button:hover {
+    background-color: green;
+  }
+  
+  .language-buttons button.active {
+    background-color: #007bff;
+    color: green;
+    border-color: #0056b3;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  pre {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+  }
+  
+  code {
+    display: block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
