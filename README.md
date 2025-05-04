@@ -1,55 +1,43 @@
-# React + TypeScript + Vite
+<!-- npm create vite@latest -->
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🧩 Merge Sort Visualizer
+A visual, interactive tool built with Vite, React, and Tailwind CSS to help learners understand how the Merge Sort algorithm works through multiple modes of visualization.
 
-Currently, two official plugins are available:
+🚀 Features
+This project includes three different Merge Sort visualizers:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Merge Sort – Try It Yourself
+Step through the algorithm manually by choosing when to "Split" or "Merge" subarrays. Get instant feedback as you interact.
 
-## Expanding the ESLint configuration
+Merge Sort – Current Step View
+Automatically shows one step at a time in the merge sort process with a reference to the previous step. Great for focusing on each transformation clearly.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Merge Sort – Full Depth View
+Displays the complete breakdown and reassembly of the array during merge sort, offering a full-picture understanding.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+🛠️ Tech Stack
+⚡ Vite – Fast and modern frontend tooling
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+⚛️ React – UI framework for building components
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+🎨 Tailwind CSS – Utility-first styling for rapid design
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-# divide-and-conquer
+📦 Getting Started
+Follow these steps to run the project locally:
+
+# Navigate into the project directory
+cd divide-and-conquer
+
+# Install dependencies
+npm install
+# or
+npm i
+
+# Start the development server
+npm run dev
+Once the server is running, open your browser and go to:
+http://localhost:5173
+
+
+🎯 Goals
+This tool was created to support learning through interaction. It’s ideal for students, educators, or anyone curious about how divide-and-conquer algorithms like Merge Sort function under the hood.
