@@ -2,7 +2,7 @@
 
 # 🧩 Merge Sort Visualizer
 
-A visual, interactive tool built with **Vite**, **React**, and **Tailwind CSS** to help learners understand how the Merge Sort algorithm works through multiple modes of visualization.
+A visual, interactive tool built with **Vite**, **React/Typescript**, and **Tailwind CSS** to help learners understand how the Merge Sort algorithm works through multiple modes of visualization.
 
 ## 🚀 Features
 
